@@ -1,0 +1,390 @@
+/* Shrikhand font is imported from Google Fonts in the HTML */
+
+body {
+  background-color: #fffcee;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px #0000001a;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+}
+
+.header-text {
+  font-family: "Shrikhand", serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #57381b;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  position: fixed;
+  right: 1%;
+}
+
+.header-buttons button {
+  background-color: transparent;
+  padding: 8px 16px;
+  color: #57381b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+  background-color: #FFD8D8;
+}
+
+/* Contact page styles */
+.contact-container {
+  padding: 120px 40px 80px;
+  background-color: #fffcee;
+  min-height: 100vh;
+}
+
+.contact-title {
+  font-family: "Fineday Style One", serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #57381b;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* Contact Form Styling */
+.contact-form-wrapper {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-family: "Fineday Style One", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #57381b;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  color: #57381b;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #9ed7a3;
+  box-shadow: 0 0 0 3px rgba(158, 215, 163, 0.1);
+  background-color: #ffffff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: "Shrikhand", serif;
+}
+
+.submit-button {
+  padding: 16px 32px;
+  background-color: #57381b;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-family: "Fineday Style One", serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(87, 56, 27, 0.2);
+  margin-top: 15px;
+}
+
+.submit-button:hover {
+  background-color: #3d2a15;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(87, 56, 27, 0.3);
+}
+
+.submit-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(87, 56, 27, 0.2);
+}
+
+/* Contact Info Box */
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+.info-title {
+  font-family: "Fineday Style One", serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #57381b;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.info-item {
+  margin-bottom: 28px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-label {
+  font-family: "Fineday Style One", serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #9ed7a3;
+  margin-bottom: 8px;
+}
+
+.info-text {
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  color: #57381b;
+  line-height: 1.6;
+}
+
+.info-text a {
+  color: #57381b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.info-text a:hover {
+  color: #9ed7a3;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #9ed7a3;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: "Shrikhand", serif;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #7bc48a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(158, 215, 163, 0.3);
+}
+
+/* Success message styling */
+.form-message {
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  animation: slideDown 0.3s ease;
+}
+
+.form-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-form-wrapper,
+  .contact-info-box {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 100px 20px 40px;
+  }
+
+  .contact-title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .contact-content {
+    gap: 30px;
+  }
+
+  .contact-form-wrapper,
+  .contact-info-box {
+    padding: 25px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .submit-button {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+
+  .info-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .info-label {
+    font-size: 14px;
+  }
+
+  .info-text {
+    font-size: 14px;
+  }
+
+  .social-link {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 90px 15px 30px;
+  }
+
+  .contact-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form-wrapper,
+  .contact-info-box {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .form-group {
+    gap: 6px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .submit-button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}

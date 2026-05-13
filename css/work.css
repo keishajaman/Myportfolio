@@ -1,0 +1,395 @@
+/* Shrikhand font is imported from Google Fonts in the HTML */
+
+body {
+  background-color: #eefabd;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px #0000001a;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+}
+
+.header-text {
+  font-family: "Shrikhand", serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #57381b;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  position: fixed;
+  right: 1%;
+}
+
+.header-buttons button {
+  background-color: transparent;
+  padding: 8px 16px;
+  color: #57381b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+  background-color: #FFD8D8;
+}
+
+/* Work page styles */
+.work-container {
+  padding: 120px 40px 80px;
+  background-color: #eefabd;
+  min-height: 100vh;
+}
+
+.work-title {
+  font-family: "Fineday Style One", serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #57381b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.work-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.work-filter-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #9ed7a3;
+  color: #57381b;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #fffcee;
+  border-color: #9ed7a3;
+}
+
+.category-button.active {
+  background-color: #fffcee;
+  color: #57381b;
+  border-color: #57381b;
+}
+
+.category-heading {
+  font-family: "Shrikhand", serif;
+  font-size: 32px;
+  color: #57381b;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Projects showcase container */
+.projects-showcase {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.category-section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Individual project showcase with alternating layout */
+.project-showcase {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  min-height: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Alternate layout for even-numbered projects */
+.project-showcase:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Project image container */
+.project-image-container {
+  flex: 1;
+  min-width: 350px;
+  position: relative;
+}
+
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #9ed7a3, #ffd8d8);
+}
+
+.carousel-slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.project-image-placeholder {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #9ed7a3, #ffd8d8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fineday Style One", serif;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(87, 56, 27, 0.6);
+  color: #ffffff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-nav:hover {
+  background-color: rgba(87, 56, 27, 0.9);
+}
+
+.carousel-prev {
+  left: 12px;
+}
+
+.carousel-next {
+  right: 12px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.carousel-dot.active {
+  background-color: #ffffff;
+  border-color: #57381b;
+  width: 12px;
+  height: 12px;
+}
+
+.carousel-dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Project info box with rounded rectangle */
+.project-info-box {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.project-info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+.project-title {
+  font-family: "Fineday Style One", serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #57381b;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  color: #57381b;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-tech {
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  color: #9ed7a3;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Demo button styling */
+.demo-button {
+  padding: 14px 32px;
+  background-color: #57381b;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 4px 12px rgba(87, 56, 27, 0.2);
+}
+
+.demo-button:hover {
+  background-color: #3d2a15;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(87, 56, 27, 0.3);
+}
+
+.demo-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(87, 56, 27, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .project-showcase,
+  .project-showcase:nth-child(even) {
+    flex-direction: column;
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .project-image-container {
+    min-width: 100%;
+  }
+
+  .project-image-placeholder {
+    height: 300px;
+  }
+
+  .project-info-box {
+    min-height: auto;
+    padding: 30px;
+  }
+
+  .project-title {
+    font-size: 28px;
+  }
+
+  .projects-showcase {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-container {
+    padding: 100px 20px 40px;
+  }
+  
+  .work-title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .projects-showcase {
+    gap: 50px;
+  }
+
+  .project-image-placeholder {
+    height: 250px;
+    font-size: 24px;
+  }
+
+  .project-info-box {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .project-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .demo-button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+

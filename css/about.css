@@ -1,0 +1,450 @@
+/* Shrikhand font is imported from Google Fonts in the HTML */
+
+/* Header */
+body {
+  background-color: #eefabd;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px #0000001a;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+}
+
+.header-text {
+  font-family: "Shrikhand", serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #57381b;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  position: fixed;
+  right: 1%;
+}
+
+.header-buttons button {
+  background-color: transparent;
+  padding: 8px 16px;
+  color: #57381b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+  background-color: #FFD8D8;
+}
+
+/* About page styles */
+.about-container {
+  display: flex;
+  gap: 40px;
+  padding: 100px 40px 40px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.about-picture-placeholder {
+  width: 300px;
+  height: 300px;
+  background-color: #d3d3d3;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.about-text-block {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0000001a;
+  min-height: 300px;
+  position: relative;
+}
+
+.about-text-block::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 20px 10px 0;
+  border-color: transparent #ffffff transparent transparent;
+  filter: drop-shadow(-2px 2px 2px #0000001a);
+}
+
+.About-text {
+  font-family: "Shrikhand", serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #57381b;
+  margin-bottom: 10px;
+}
+
+.about-text-block {
+  font-family: "Shrikhand", serif;
+  color: #57381b;
+  font-size: 24px;
+}
+
+/* Section Container Styles */
+.section-container {
+  padding: 80px 40px;
+  background-color: #fffcee;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: "Fineday Style One", serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #57381b;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Skills Section Styles */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.skill-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #ffffff 0%, #f9f5f0 100%);
+}
+
+.skill-name {
+  font-family: "Fineday Style One", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #57381b;
+  margin-bottom: 12px;
+}
+
+.skill-description {
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  color: #9ed7a3;
+  line-height: 1.6;
+}
+
+/* Education Section - Simple Cards */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.timeline-item {
+  margin: 0;
+  position: static;
+}
+
+.timeline::before,
+.timeline-marker {
+  display: none;
+}
+
+.timeline-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.timeline-title {
+  font-family: "Fineday Style One", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #57381b;
+  margin-bottom: 10px;
+}
+
+.timeline-institution {
+  font-family: "Shrikhand", serif;
+  font-size: 15px;
+  color: #9ed7a3;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline-date {
+  font-family: "Shrikhand", serif;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.timeline-description {
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  color: #57381b;
+  line-height: 1.7;
+}
+
+/* Experience Section - Grid */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.experience-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 5px solid #9ed7a3;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.exp-title {
+  font-family: "Fineday Style One", serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #57381b;
+  margin-bottom: 5px;
+}
+
+.exp-company {
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  color: #9ed7a3;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.exp-date {
+  font-family: "Shrikhand", serif;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.exp-responsibilities {
+  font-family: "Shrikhand", serif;
+  font-size: 15px;
+  color: #57381b;
+  line-height: 1.8;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.exp-responsibilities li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section-container {
+    padding: 60px 30px;
+  }
+
+  .section-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .timeline::before,
+  .timeline-marker {
+    display: none;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .skill-name {
+    font-size: 20px;
+  }
+
+  .skill-description {
+    font-size: 14px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    width: calc(100% - 60px);
+    margin-left: 60px !important;
+  }
+
+  .timeline-marker {
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    border-width: 3px;
+  }
+
+  .timeline-content {
+    padding: 15px;
+  }
+
+  .timeline-title {
+    font-size: 18px;
+  }
+
+  .timeline-institution {
+    font-size: 14px;
+  }
+
+  .timeline-date {
+    font-size: 12px;
+  }
+
+  .timeline-description {
+    font-size: 14px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .experience-card {
+    padding: 20px;
+    border-left-width: 4px;
+  }
+
+  .exp-title {
+    font-size: 18px;
+  }
+
+  .exp-company {
+    font-size: 14px;
+  }
+
+  .exp-date {
+    font-size: 12px;
+  }
+
+  .exp-responsibilities {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 15px 30px;
+  }
+
+  .about-picture-placeholder {
+    width: 100%;
+    height: 200px;
+  }
+
+  .section-container {
+    padding: 40px 15px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skill-card {
+    padding: 15px;
+  }
+
+  .About-text {
+    font-size: 28px;
+  }
+}

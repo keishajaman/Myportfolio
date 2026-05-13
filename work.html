@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Declares this as an HTML5 document -->
+
+<html lang="en">
+  <!-- Main HTML element with language set to English -->
+  <head>
+    <!-- Head section: Contains metadata and links to external resources -->
+    <meta charset="UTF-8" />
+    <!-- Sets character encoding to UTF-8 for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the page responsive on mobile devices -->
+    <title>My work</title>
+    <!-- Sets the page title shown in the browser tab -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Links to the main CSS stylesheet for styling -->
+    <link rel="stylesheet" href="css/work.css" />
+    <!-- Links to the work page CSS stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconnects to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnects to Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- Imports Google Fonts for custom typography -->
+    <link rel="preload" as="font" href="font/Fineday/Fineday/Fineday-StyleOne.ttf" type="font/ttf" crossorigin>
+  </head>
+
+  <body>
+    <!-- Main content area of the page -->
+    <header>
+      <!-- Navigation header that stays at the top of all pages -->
+      <div class="header-content">
+        <!-- Container for profile image and name -->
+        <img src="../img/logo (2).png" alt="Profile" class="header-image" />
+        <!-- Profile picture (placeholder - add your image src) -->
+        <div class="header-text">Keisha Jaman</div>
+        <!-- Your name displayed in the header -->
+      </div>
+      <nav class="header-buttons">
+        <!-- Navigation menu with clickable buttons -->
+        <button>Home</button>
+        <!-- Links to the home page -->
+        <button>My work</button>
+        <!-- Links to the portfolio/work page -->
+        <button>About me</button>
+        <!-- Links to the about page -->
+        <button>Contact</button>
+        <!-- Links to the contact page -->
+      </nav>
+    </header>
+
+    <!-- Work/Projects section -->
+    <div class="work-container">
+      <div class="work-header">
+        <div class="work-title">My Work</div>
+        <div class="work-filter-buttons">
+          <a class="category-button" href="software.html">Software Engineering Work</a>
+          <a class="category-button" href="graphic.html">Graphic Design Work</a>
+        </div>
+      </div>
+
+      <div class="projects-showcase">
+        <div id="software-projects" class="category-section">
+          <div class="category-heading">Software Engineering Work</div>
+          <!-- Project 1 -->
+          <div class="project-showcase" id="project-1">
+            <div class="project-image-container">
+              <div class="project-image-placeholder">
+                <span>Project 1</span>
+              </div>
+            </div>
+            <div class="project-info-box">
+              <h2 class="project-title">Project 1</h2>
+              <p class="project-description">Add your project description here</p>
+              <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+              <button class="demo-button" onclick="window.open('#', '_blank')">View Demo</button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-showcase" id="project-2">
+            <div class="project-image-container">
+              <div class="project-image-placeholder">
+                <span>Project 2</span>
+              </div>
+            </div>
+            <div class="project-info-box">
+              <h2 class="project-title">Project 2</h2>
+              <p class="project-description">Add your project description here</p>
+              <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+              <button class="demo-button" onclick="window.open('#', '_blank')">View Demo</button>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-showcase" id="project-3">
+            <div class="project-image-container">
+              <div class="project-image-placeholder">
+                <span>Project 3</span>
+              </div>
+            </div>
+            <div class="project-info-box">
+              <h2 class="project-title">Project 3</h2>
+              <p class="project-description">Add your project description here</p>
+              <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+              <button class="demo-button" onclick="window.open('#', '_blank')">View Demo</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="graphic-projects" class="category-section">
+          <div class="category-heading">Graphic Design Work</div>
+
+          <!-- Project 4 -->
+          <div class="project-showcase" id="project-4">
+            <div class="project-image-container">
+              <div class="project-image-placeholder">
+                <span>Project 4</span>
+              </div>
+            </div>
+            <div class="project-info-box">
+              <h2 class="project-title">Project 4</h2>
+              <p class="project-description">Add your project description here</p>
+              <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+              <button class="demo-button" onclick="window.open('#', '_blank')">View Demo</button>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-showcase" id="project-5">
+            <div class="project-image-container">
+              <div class="project-image-placeholder">
+                <span>Project 5</span>
+              </div>
+            </div>
+            <div class="project-info-box">
+              <h2 class="project-title">Project 5</h2>
+              <p class="project-description">Add your project description here</p>
+              <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+              <button class="demo-button" onclick="window.open('#', '_blank')">View Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- End of page content -->
+
+  <script src="js/navigation.js"></script>
+  <script src="js/work.js"></script>
+  <!-- Links to JavaScript file that handles button navigation -->
+</html>
